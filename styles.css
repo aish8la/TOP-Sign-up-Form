@@ -16,26 +16,120 @@
 body {
     background-color: #f9fafb;
     display: flex;
-    height: 900px;
+    min-height: 100vh;
+    height: 42rem;
+}
+
+
+
+
+
+
+
+
+
+
+.main-txt {
+    font-weight: 600;
+}
+
+.form-txt {
+    font-weight: 550;
+}
+
+.main-txt,
+.form-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 8rem;
 }
 
 .bg-img-container {
     background-image: url(./resources/background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    max-width: auto;
+    min-width: 30rem;
 
+}
+
+form {
+    margin-top: 3rem;
+    padding-right: 4rem;
 }
 
 .form-field-ctn {
     display: flex;
-    gap: 30px;
+    gap: 4rem;
+    margin-top: 2rem;
 }
 
 .fields {
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
 }
 
 .lables {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
+
+.text-input {
+    outline: none;
+    padding: 2px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    height: 2rem;
+    width: 20rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.text-input:focus {
+    outline: blue solid 1px;
+    border-color: transparent;
+    box-shadow: 6px 3px 3px rgb(154, 153, 153);
+
+}
+
+button[type='submit'] {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #596D48;
+    color: #f9fafb;
+    margin-bottom: 15px;
+}
+
+button,
+.bottom-txt {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input[type='password']:invalid {
+    outline: rgb(255, 0, 0) solid 2px;
+    border-color: transparent;
+}
+
+#password:invalid + span::after {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    content: 'Passwords do not match';
+    font-size: 12px;
+    color: red;
+    display: block;
+    margin-top: 4px;
 }
