@@ -14,7 +14,6 @@
 }
 
 body {
-    font-family: sans-serif;
     background-color: #f9fafb;
     display: flex;
     height: 900px;
@@ -27,5 +26,16 @@ body {
 
 }
 
+.form-field-ctn {
+    display: flex;
+    gap: 30px;
+}
 
+.fields {
+    margin-bottom: 15px;
+}
 
+.lables {
+    display: block;
+    margin-bottom: 5px;
+}
